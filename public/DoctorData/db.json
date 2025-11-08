@@ -1,0 +1,226 @@
+
+  [
+  {
+    "id": "1",
+    "name": "Dr. Alice Smith",
+    "specialty": "Cardiology",
+    "phone": "555-1234",
+    "experience": "12 years",
+    "appointmentFees": 150,
+    "about": "Experienced cardiologist specializing in heart diseases and preventive care.",
+    "isActive": false,
+    "image": "https://raw.githubusercontent.com/avinashdm/gs-images/main/prescripto/doc1.png"
+  },
+  {
+    "id": "2",
+    "name": "Dr. Robert L. Johnson",
+    "specialty": "Pediatrics",
+    "phone": "555-5678",
+    "experience": "50+ years",
+    "appointmentFees": 100,
+    "about": "Renowned pediatrician dedicated to providing exceptional care for children and families.",
+    "isActive": false,
+    "image":" https://raw.githubusercontent.com/avinashdm/gs-images/main/prescripto/doc2.png"
+  },
+  {
+    "id": "3",
+    "name": "Dr. Tracy Evans",
+    "specialty": "Dermatology",
+    "phone": "555-2345",
+    "experience": "10 years",
+    "appointmentFees": 120,
+    "about": "Board-certified dermatologist specializing in skin cancer and cosmetic procedures.",
+    "isActive": false,
+    "image": "https://raw.githubusercontent.com/avinashdm/gs-images/main/prescripto/doc3.png"
+  },
+  {
+    "id": "4",
+    "name": "Dr. Daniel D. Lee",
+    "specialty": "Psychiatry",
+    "phone": "555-6789",
+    "experience": "15 years",
+    "appointmentFees": 200,
+    "about": "Fellowship-trained spine surgeon specializing in spine arthritis, trauma, and scoliosis.",
+    "isActive": true,
+    "image": "https://raw.githubusercontent.com/avinashdm/gs-images/main/prescripto/doc4.png"
+  },
+  {
+    "id": "5",
+    "name": "Dr. Emma Leigh Davis",
+    "specialty": "Cardiology",
+    "phone": "555-7890",
+    "experience": "9 years",
+    "appointmentFees": 180,
+    "about": "Focuses on brain, spine, and nervous system disorders.",
+    "isActive": true,
+    "image": "https://raw.githubusercontent.com/avinashdm/gs-images/main/prescripto/doc5.png"
+  },
+  {
+    "id": "6",
+    "name": "Dr. Franklin T. Wilson",
+    "specialty": "Psychiatry",
+    "phone": "555-3456",
+    "experience": "14 years",
+    "appointmentFees": 160,
+    "about": "Provides mental health care, counseling, and therapy.",
+    "isActive": false,
+    "image": "https://raw.githubusercontent.com/avinashdm/gs-images/main/prescripto/doc6.png"
+  },
+  {
+    "id": "7",
+    "name": "Dr. Grace N. Miller",
+    "specialty": "Gynecology",
+    "phone": "555-4567",
+    "experience": "11 years",
+    "appointmentFees": 130,
+    "about": "Specializes in women's health, reproductive system, and maternity care.",
+    "isActive": true,
+    "image": "https://raw.githubusercontent.com/avinashdm/gs-images/main/prescripto/doc7.png"
+  },
+  {
+    "id": "8",
+    "name": "Dr. Henry Brown",
+    "specialty": "Oncology",
+    "phone": "555-8901",
+    "experience": "45+ years",
+    "appointmentFees": 250,
+    "about": "Specialist in cancer treatment and chemotherapy.",
+    "isActive": true,
+    "image": "https://raw.githubusercontent.com/avinashdm/gs-images/main/prescripto/doc8.png"
+  },
+  {
+    "id": "9",
+    "name": "Dr. Irene Walker",
+    "specialty": "Endocrinology",
+    "phone": "555-6781",
+    "experience": "13 years",
+    "appointmentFees": 170,
+    "about": "Focuses on hormone disorders, diabetes, and thyroid conditions.",
+    "isActive": true,
+    "image": "https://raw.githubusercontent.com/avinashdm/gs-images/main/prescripto/doc9.png"
+  },
+  {
+    "id": "10",
+    "name": "Dr. Jack Thompson",
+    "specialty": "ENT",
+    "phone": "555-4321",
+    "experience": "7 years",
+    "appointmentFees": 110,
+    "about": "Treats ear, nose, and throat conditions including sinus problems.",
+    "isActive": true,
+    "image": "https://raw.githubusercontent.com/avinashdm/gs-images/main/prescripto/doc10.png"
+  },
+  {
+    "id": "11",
+    "name": "Dr. Karen Lewis",
+    "specialty": "Endocrinology",
+    "phone": "555-1122",
+    "experience": "16 years",
+    "appointmentFees": 190,
+    "about": "Specialist in autoimmune and joint-related conditions.",
+    "isActive": true,
+    "image": "https://raw.githubusercontent.com/avinashdm/gs-images/main/prescripto/doc10.png"
+  },
+  {
+    "id": "12",
+    "name": "Dr. Liam Martinez",
+    "specialty": "Gastroenterology",
+    "phone": "555-2211",
+    "experience": "9 years",
+    "appointmentFees": 140,
+    "about": "Focuses on lung diseases and respiratory conditions.",
+    "isActive": true,
+    "image":"https://raw.githubusercontent.com/avinashdm/gs-images/main/prescripto/doc9.png"
+  },
+  {
+    "id": "13",
+    "name": "Dr. Mia Hernandez",
+    "specialty": "Gastroenterology",
+    "phone": "555-3344",
+    "experience": "10 years",
+    "appointmentFees": 160,
+    "about": "Expert in digestive system disorders and liver problems.",
+    "isActive": true,
+    "image": "https://raw.githubusercontent.com/avinashdm/gs-images/main/prescripto/doc8.png"
+  },
+  {
+    "id": "14",
+    "name": "Dr. Noah Clark",
+    "specialty": "Urology",
+    "phone": "555-5566",
+    "experience": "12 years",
+    "appointmentFees": 150,
+    "about": "Focuses on urinary tract and male reproductive health.",
+    "isActive": true,
+    "image": "https://raw.githubusercontent.com/avinashdm/gs-images/main/prescripto/doc7.png"
+  },
+  {
+    "id": "15",
+    "name": "Dr. Olivia Scott",
+    "specialty": "Nephrology",
+    "phone": "555-6677",
+    "experience": "8 years",
+    "appointmentFees": 120,
+    "about": "Eye care specialist including cataract and vision correction.",
+    "isActive": true,
+    "image":"https://raw.githubusercontent.com/avinashdm/gs-images/main/prescripto/doc6.png"
+  },
+  {
+    "id": "16",
+    "name": "Dr. Paul Adams",
+    "specialty": "General Medicine",
+    "phone": "555-7788",
+    "experience": "20 years",
+    "appointmentFees": 100,
+    "about": "General physician for routine checkups and common illnesses.",
+    "isActive": true,
+    "image": "https://raw.githubusercontent.com/avinashdm/gs-images/main/prescripto/doc5.png"
+  },
+  {
+    "id": "17",
+    "name": "Dr. Quinn Carter",
+    "specialty": "Plastic Surgery",
+    "phone": "555-8899",
+    "experience": "15 years",
+    "appointmentFees": 300,
+    "about": "Specialist in reconstructive and cosmetic surgery.",
+    "isActive": true,
+    "image": "https://raw.githubusercontent.com/avinashdm/gs-images/main/prescripto/doc4.png"
+  },
+  {
+    "id": "18",
+    "name": "Dr. Rachel Lopez",
+    "specialty": "Nephrology",
+    "phone": "555-9900",
+    "experience": "14 years",
+    "appointmentFees": 200,
+    "about": "Focuses on kidney diseases and dialysis care.",
+    "isActive": true,
+    "image":"https://raw.githubusercontent.com/avinashdm/gs-images/main/prescripto/doc6.png"
+  },
+  {
+    "id": "19",
+    "name": "Dr. Samuel Wright",
+    "specialty": "Dentistry",
+    "phone": "555-2233",
+    "experience": "6 years",
+    "appointmentFees": 80,
+    "about": "Provides oral health care, dental surgery, and cosmetic dentistry.",
+    "isActive": true,
+    "image": " https://raw.githubusercontent.com/avinashdm/gs-images/main/prescripto/doc2.png"
+  },
+  {
+    "id": "20",
+    "name": "Dr. Tina Green",
+    "specialty": "Nephrology",
+    "phone": "555-4455",
+    "experience": "11 years",
+    "appointmentFees": 210,
+    "about": "Expert in blood disorders, anemia, and related conditions.",
+    "isActive": true,
+    "image":  "https://raw.githubusercontent.com/avinashdm/gs-images/main/prescripto/doc1.png"
+  }
+]
+
+
+

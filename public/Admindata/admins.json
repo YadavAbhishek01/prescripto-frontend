@@ -1,0 +1,59 @@
+
+     [
+    {
+      "id": 1,
+      "name": "Dr. Emily Carter",
+      "email": "emily.carter@gmail.com",
+      "role": "Super Admin",
+      "phone": "+1 (212) 555-1001",
+      "department": "Administration",
+      "status": "active",
+      "password": "admin123",
+      "image":"https://img.icons8.com/?size=100&id=123623&format=png&color=000000"
+    },
+    {
+      "id": 2,
+      "name": "Michael Johnson",
+      "email": "michael.johnson@gmail.com",
+      "role": "Admin",
+      "phone": "+1 (212) 555-1002",
+      "department": "Human Resources",
+      "status": "active",
+      "password": "hradmin456",
+      "image":"https://img.icons8.com/?size=100&id=82404&format=png&color=000000"
+    },
+    {
+      "id": 3,
+      "name": "Sophia Williams",
+      "email": "sophia.williams@gmail.com",
+      "role": "Admin",
+      "phone": "+1 (212) 555-1003",
+      "department": "Finance",
+      "status": "inactive",
+      "password": "finance789",
+      "image":"https://img.icons8.com/?size=100&id=68733&format=png&color=000000"
+    },
+    {
+      "id": 4,
+      "name": "David Brown",
+      "email": "david.brown@gmail.com",
+      "role": "Admin",
+      "phone": "+1 (212) 555-1004",
+      "department": "IT Support",
+      "status": "active",
+      "password": "itadmin2024",
+        "image":"https://img.icons8.com/?size=100&id=110479&format=png&color=000000"
+    },
+    {
+      "id": 5,
+      "name": "Olivia Miller",
+      "email": "olivia.miller@gmail.com",
+      "role": "Admin",
+      "phone": "+1 (212) 555-1005",
+      "department": "Operations",
+      "status": "active",
+      "password": "ops999",
+      "image":"https://img.icons8.com/?size=100&id=110479&format=png&color=000000"
+    }
+  ]
+
