@@ -2,7 +2,8 @@ import axios from "axios";
 import { message } from "antd";
 
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:5000/api",
+   
+  baseURL: `${import.meta.env.VITE_BACKEND_URL}`,
 });
 
 // ✅ Request Interceptor – Attach Token
