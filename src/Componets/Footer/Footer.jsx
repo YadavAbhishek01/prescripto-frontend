@@ -5,7 +5,7 @@ const Footer = () => {
   const navigate=useNavigate()
   const[getrole,setGetrole]=useState(null)
   useEffect(()=>{
-    const role=JSON.parse(localStorage.getItem("role"))
+    const role=localStorage.getItem("role")
     setGetrole(role)
 
   })

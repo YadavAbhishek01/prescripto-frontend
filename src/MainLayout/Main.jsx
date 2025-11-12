@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom";
 import Sidebar from "../Admin/Componets/Sidebar/Sidebar";
 
 const Main = () => {
-  const admin = JSON.parse(localStorage.getItem("role"));
+  const admin = localStorage.getItem("role");
 
   return (
     <div className="flex flex-col min-h-screen ">

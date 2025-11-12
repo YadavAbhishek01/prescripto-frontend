@@ -10,7 +10,7 @@ import Dashboard from "../Admin/Componets/Hero/Hero";
 
 
 const Home = () => {
-  const admin = JSON.parse(localStorage.getItem("role"));
+  const admin =localStorage.getItem("role");
 
   return (
     <div className="min-h-screen bg-Zinc-400 ">

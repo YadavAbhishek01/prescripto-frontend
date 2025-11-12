@@ -7,7 +7,7 @@ const Hero = () => {
   const [roleData, setRoleData] = useState(null);
 
   useEffect(() => {
-    const role = JSON.parse(localStorage.getItem("role"));
+    const role = localStorage.getItem("role");
     setRoleData(role);
   }, []);
 

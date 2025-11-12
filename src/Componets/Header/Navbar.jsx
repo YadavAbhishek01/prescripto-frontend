@@ -24,10 +24,10 @@ const Navbar = () => {
 
   const Admin = "admin";
   useEffect(() => {
-    const roleData = JSON.parse(localStorage.getItem("role"));
+    const roleData =localStorage.getItem("role");
 
     setRole(roleData);
-    setAdminName(JSON.parse(localStorage.getItem("Admin")));
+    setAdminName(localStorage.getItem("Admin"));
 
 
   }, []);
@@ -278,107 +278,96 @@ const Navbar = () => {
           )}
 
           {/* Mobile Menu */}
-          {isMenuOpen && (
-            <div className="md:hidden flex flex-col items-center gap-4 py-6 bg-white border-t shadow-lg animate-slide-down relative">
-              {/* Nav Links */}
-              <Link
-                to="/"
-                onClick={() => setMenuOpen(false)}
-                className="hover:text-sky-500 font-medium"
-              >
-                Home
-              </Link>
-              <Link
-                to="/all-doctor"
-                onClick={() => setMenuOpen(false)}
-                className="hover:text-sky-500 font-medium"
-              >
-                All Doctors
-              </Link>
-              <Link
-                to="/about"
-                onClick={() => setMenuOpen(false)}
-                className="hover:text-sky-500 font-medium"
-              >
-                About
-              </Link>
-              <Link
-                to="/contact"
-                onClick={() => setMenuOpen(false)}
-                className="hover:text-sky-500 font-medium"
-              >
-                Contact Us
-              </Link>
+         {isMenuOpen && (
+  <div className="md:hidden flex flex-col items-center gap-4 py-6 bg-white border-t shadow-lg animate-slide-down relative">
+    {/* Common Nav Links */}
+    <Link
+      to="/"
+      onClick={() => setMenuOpen(false)}
+      className="hover:text-sky-500 font-medium"
+    >
+      Home
+    </Link>
+    <Link
+      to="/all-doctor"
+      onClick={() => setMenuOpen(false)}
+      className="hover:text-sky-500 font-medium"
+    >
+      All Doctors
+    </Link>
+    <Link
+      to="/about"
+      onClick={() => setMenuOpen(false)}
+      className="hover:text-sky-500 font-medium"
+    >
+      About
+    </Link>
+    <Link
+      to="/contact"
+      onClick={() => setMenuOpen(false)}
+      className="hover:text-sky-500 font-medium"
+    >
+      Contact Us
+    </Link>
 
-              {/* User Section */}
-              {getrole === "User" ? (
-                CurrentLogin.map((user, ind) => (
-                  <div key={ind} className="flex items-center gap-3 mt-2 cursor-pointer">
-                    {!user.Image ? (
-                      <CgProfile
-                        onClick={() => settoggel((prev) => !prev)}
-                        className="text-3xl text-sky-500 cursor-pointer hover:text-sky-600"
-                      />
-                    ) : (
-                      <img
-                        src={user.Image}
-                        alt="Profile"
-                        className="w-12 h-10 sm:w-12 sm:h-12 rounded-full border border-gray-300 cursor-pointer hover:scale-105 transition object-cover"
-                        onClick={() => settoggel((prev) => !prev)}
-                      />
+    {/* Conditional: show depending on login state */}
+    {getrole === "user" ? (
+      <>
+        <button
+          onClick={() => {
+            navigate("/profile");
+            setMenuOpen(false);
+          }}
+          className="hover:text-sky-500 font-medium"
+        >
+          My Profile
+        </button>
 
-                    )}
+        <button
+          onClick={() => {
+            navigate("/my-appoinment");
+            setMenuOpen(false);
+          }}
+          className="hover:text-sky-500 font-medium"
+        >
+          My Appointments
+        </button>
 
-                    <p className="text-gray-700 font-medium flex items-center gap-1">
-                      👋 {user.FullName}
-                    </p>
-                  </div>
-                ))
-              ) : (
-                <button
-                  className="bg-sky-500 text-white font-semibold py-2 px-6 rounded-xl hover:bg-sky-600 transition"
-                  onClick={() => {
-                    setMenuOpen(false);
-                    navigate("/login");
-                  }}
-                >
-                  Create Account
-                </button>
-              )}
-              <button className="bg-gray-400 px-5 py-1 rounded-lg text-white" onClick={() => {
-                setMenuOpen(false);
-                navigate(`/login/${Admin}`);
-              }} >Admin Dashboard</button>
-              {/* Dropdown Menu */}
-              {toggel && (
-                <div className="absolute top-28 right-6 w-44 bg-white shadow-xl rounded-xl border border-gray-200 flex flex-col text-sm z-20 overflow-hidden">
-                  <p
-                    className="px-4 py-3 hover:bg-gray-100 cursor-pointer"
-                    onClick={() => {
-                      navigate("/profile");
-                      setMenuOpen(false);
-                      settoggel(false);
-                    }}
-                  >
-                    My Profile
-                  </p>
-                  <p
-                    className="px-4 py-3 hover:bg-gray-100 cursor-pointer"
-                    onClick={handleappoinment}
+        <button
+          onClick={() => {
+            handleLogout();
+            setMenuOpen(false);
+          }}
+          className="text-red-500 font-medium"
+        >
+          Logout
+        </button>
+      </>
+    ) : (
+      <>
+        <button
+          className="bg-sky-500 text-white font-semibold py-2 px-6 rounded-xl hover:bg-sky-600 transition"
+          onClick={() => {
+            setMenuOpen(false);
+            navigate("/login");
+          }}
+        >
+          Create Account
+        </button>
+        <button
+          className="bg-gray-400 px-5 py-1 rounded-lg text-white"
+          onClick={() => {
+            setMenuOpen(false);
+            navigate(`/login/${Admin}`);
+          }}
+        >
+          Admin Dashboard
+        </button>
+      </>
+    )}
+  </div>
+)}
 
-                  >
-                    My Appointments
-                  </p>
-                  <p
-                    className="px-4 py-3 hover:bg-red-50 cursor-pointer text-red-500 font-medium"
-                    onClick={handleLogout}
-                  >
-                    Logout
-                  </p>
-                </div>
-              )}
-            </div>
-          )}
         </nav>
       </div>
       {<DraggableDialog

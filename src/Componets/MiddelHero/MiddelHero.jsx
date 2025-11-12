@@ -5,7 +5,7 @@ const MiddelHero = () => {
   const [role, setRole] = useState("");
 
   useEffect(() => {
-    const user = JSON.parse(localStorage.getItem("role"));
+    const user = localStorage.getItem("role");
     setRole(user);
   }, []);
 

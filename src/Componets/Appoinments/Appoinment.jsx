@@ -53,7 +53,7 @@ const Appoinment = ({ filderdata, Fees }) => {
 
   // Handle appointment booking
   const handelappoinment = async () => {
-    const user = JSON.parse(localStorage.getItem("role"));
+    const user = localStorage.getItem("role");
     if (!user) {
       window.alert("If you want to book an appointment, please login.");
       navigator("/login");

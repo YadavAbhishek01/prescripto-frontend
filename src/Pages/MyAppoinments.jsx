@@ -11,7 +11,7 @@ const MyAppoinments = () => {
   const [deleteId, setDeleteId] = useState("")
 
   useEffect(() => {
-    const loginuserdata = JSON.parse(localStorage.getItem("Loginuser"))
+    const loginuserdata =localStorage.getItem("Loginuser")
     setLoginUser(loginuserdata)
     getappointments()
   }, [])

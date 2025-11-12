@@ -32,8 +32,8 @@ const Login = () => {
           setAdmintoken(token);
           console.log(token)
           localStorage.setItem("admintoken", token);
-          localStorage.setItem("role", JSON.stringify("Admin"));
-          localStorage.setItem("Admin", JSON.stringify(email));
+          localStorage.setItem("role", "Admin");
+          localStorage.setItem("Admin", email);
           message.success("Admin login successful");
 
           setTimeout(() => {
@@ -54,8 +54,8 @@ const Login = () => {
 
         if (data.success) {
           localStorage.setItem("token", data.token);
-          localStorage.setItem("role", JSON.stringify("user"));
-          localStorage.setItem("Loginuser", JSON.stringify(email));
+          localStorage.setItem("role", "user");
+          localStorage.setItem("Loginuser", email);
           message.success("User login successful");
 
           setTimeout(() => {
