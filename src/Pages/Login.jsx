@@ -85,20 +85,7 @@ const Login = () => {
           {admin ? "Admin Login" : " Login"}
         </h2>
 
-        {/* 🔹 Demo Credentials Box */}
-          {admin ? (
-             <div className="bg-sky-50 border border-sky-200 rounded-lg p-4 mb-6 text-sm text-gray-700 shadow-sm">
-                  <p className="font-semibold text-sky-800">Demo Admin:</p>
-              <p>
-                Email: <span className="font-medium">emily.carter@gmail.com</span>
-              </p>
-              <p>
-                Password: <span className="font-medium">admin123</span>
-              </p>
-        </div> 
-            
-         
-          ) : ''}
+        
        
 
         {/* 🔹 Login Form */}
