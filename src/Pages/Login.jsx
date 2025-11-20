@@ -25,12 +25,12 @@ const Login = () => {
           password,
         });
 
-        console.log(data) 
+    
         if (data.success) {
           
           const token=data.token
           setAdmintoken(token);
-          console.log(token)
+     
           localStorage.setItem("admintoken", token);
           localStorage.setItem("role", "Admin");
           localStorage.setItem("Admin", email);

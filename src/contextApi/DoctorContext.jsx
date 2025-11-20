@@ -9,7 +9,7 @@ export const DoctorContextProvider = ({ children }) => {
   });
 
   const backendUrl = import.meta.env.VITE_BACKEND_URL;
-  console.log(backendUrl)
+
   useEffect(() => {
     if (admintoken) {
       localStorage.setItem("admintoken", admintoken);
@@ -18,7 +18,6 @@ export const DoctorContextProvider = ({ children }) => {
     }
   }, [admintoken]);
 
-  console.log("Admin Token:", admintoken);
 
   return (
     <DoctorContext.Provider value={{ backendUrl, admintoken, setAdmintoken }}>

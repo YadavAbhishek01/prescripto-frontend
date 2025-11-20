@@ -23,7 +23,7 @@ const AllDoctorDetails = () => {
         const { data } = await axiosInstance.get('/public/doctors')
 
         if (data.success) {
-          console.log(data.doctors)
+       
           const docdata = data.doctors
           setDoctorData(docdata)
         }

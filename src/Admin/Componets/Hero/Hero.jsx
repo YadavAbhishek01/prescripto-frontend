@@ -41,7 +41,6 @@ const Dashboard = () => {
             }
             const getappoint=async()=>{
                 const res=await axiosInstance.get('/appointments/')
-                console.log(res.data.appointments)
                 setAppointments(res.data.appointments)
             }
              const alldata = appointments.filter((doc) => doc.isActive);

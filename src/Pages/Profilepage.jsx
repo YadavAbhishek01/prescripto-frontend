@@ -21,7 +21,7 @@ useEffect(() => {
           Authorization: `Bearer ${usertoken}`, // ✅ must include 'Bearer'
         },
       });
-      console.log("User data:", res.data.user);
+
       setProfileData(res.data.user)
     } catch (error) {
       console.error("Failed to fetch user:", error);
